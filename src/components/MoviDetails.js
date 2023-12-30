@@ -67,7 +67,10 @@ const MoviDetails = ({
       poster,
       imdbRating: Number(imdbRating) > 0 ? Number(imdbRating) : 0,
       userRating,
-      runtime: Number(runtime.split(" ").at(0)),
+      runtime:
+        Number(runtime.split(" ").at(0)) > 0
+          ? Number(runtime.split(" ").at(0))
+          : 0,
     };
     handleWatchedMovie(newWatchedMovie);
     handleCloseMovie();
