@@ -65,7 +65,7 @@ const MoviDetails = ({
       title,
       year,
       poster,
-      imdbRating: Number(imdbRating),
+      imdbRating: Number(imdbRating) > 0 ? Number(imdbRating) : 0,
       userRating,
       runtime: Number(runtime.split(" ").at(0)),
     };
