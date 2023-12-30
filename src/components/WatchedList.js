@@ -27,7 +27,7 @@ const WatchedList = ({ watched, handleDeleteWatched }) => {
                   handleDeleteWatched(movie.imdbID);
                 }}
               >
-                X
+                x
               </button>
             </div>
           </li>

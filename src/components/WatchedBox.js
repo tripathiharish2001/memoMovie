@@ -12,8 +12,8 @@ const WatchedBox = ({
   handleWatchedMovie,
   handleDeleteWatched,
 }) => {
+  console.log(watched, "movies");
   const [isOpen2, setIsOpen2] = useState(true);
-
   const avgImdbRating = average(watched?.map((movie) => movie.imdbRating));
   const avgUserRating = average(watched?.map((movie) => movie.userRating));
   const avgRuntime = average(watched?.map((movie) => movie.runtime));
