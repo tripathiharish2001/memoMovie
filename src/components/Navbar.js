@@ -8,7 +8,8 @@ const Navbar = ({ movies, query, setQuery }) => {
   }, []);
 
   return (
-    <div>
+    <div className="container-navbar">
+      {/* <div> */}
       <nav className="nav-bar">
         <div className="logo">
           <span role="img">🎬</span>
@@ -26,6 +27,7 @@ const Navbar = ({ movies, query, setQuery }) => {
           Found <strong>{movies.length}</strong> results
         </p>
       </nav>
+      {/* </div> */}
     </div>
   );
 };
