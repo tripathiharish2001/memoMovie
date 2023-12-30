@@ -46,6 +46,7 @@ const tempWatchedData = [
     runtime: 116,
     imdbRating: 8.5,
     userRating: 9,
+    add,
   },
 ];
 
